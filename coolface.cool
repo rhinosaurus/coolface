@@ -1,0 +1,11 @@
+(:
+	name =) Ralph
+	city =) Philadelphia
+	address =)
+		one =) 32 Strawberry St
+		two =) Suite 2
+	state =) Pennsylvania
+	zip =) 19106
+	age =) #23
+	friends =) Brandon:Reed:Mike
+:)
