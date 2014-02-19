@@ -1,0 +1,5 @@
+/**
+ *
+ * CoolFace JS parser
+ *
+ **/
