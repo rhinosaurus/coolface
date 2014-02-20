@@ -10,5 +10,9 @@
 	age =) #23
 	over18 =) !true
 	nullValue =) @null
-	friends =) ( Brandon : Reed : Mike )
+	friends =) [:
+		Brandon
+		Reed
+		Mike
+	:] 
 :)
