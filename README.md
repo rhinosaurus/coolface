@@ -27,8 +27,19 @@ By default, CFS will handle every value as a string. What this means is that reg
 
 With this, you no longer have a need to add quotes or any other characters to indicate its type.
 
-#### String Example
+##### String Example
 ```
 (:
 	name =) Brandon Ryall
 :)
+```
+
+### Integer
+In order for you to define an integer you must add a pound `#` sign in front of the number.
+
+##### Integer Example
+```
+(:
+	age =) #25
+:)
+```
