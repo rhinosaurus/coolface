@@ -10,6 +10,8 @@ CFS files are distinguished by the `.cool` file extension.
 Data Types and Syntax
 ---------------------
 
+The first thing to understand about CFS is that it is strongly typed.
+
 By default, CFS will handle every value as a `string` unless otherwise indicated.
 
 CFS currently supports the following data types:
@@ -20,4 +22,13 @@ CFS currently supports the following data types:
 * `Array`
 * `null`
 
+### String
+By default, CFS will handle every value as a string. What this means is that regardless of what type of value you may have - if you do not indicate it is of another data type, it will automatically be handled as a string.
 
+With this, you no longer have a need to add quotes or any other characters to indicate its type.
+
+#### String Example
+```
+(:
+	name =) Brandon Ryall
+:)
