@@ -43,3 +43,27 @@ In order for you to define an integer you must add a pound `#` sign in front of 
 	age =) #25
 :)
 ```
+
+### Boolean
+To define a boolean within CFS, you must include a `!` sign in front of your bool.
+
+##### Boolean Example
+```
+(:
+	over18 =) !true
+:)
+```
+
+### Object
+An object is define by opening and closing parens + colon. An object may be defined as any value, but CFS requires that all CFS data structures also begin as an object.
+
+##### Object Example
+```
+(:
+	myObject =) (:
+		name =) Ralph Mancinelli
+		age =) 23
+		over18 =) !true
+	:)
+:)
+```
