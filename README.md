@@ -55,7 +55,7 @@ To define a boolean within CFS, you must include a `!` sign in front of your boo
 ```
 
 ### Object
-An object is define by opening and closing parens + colon. An object may be defined as any value, but CFS requires that all CFS data structures also begin as an object.
+An object is defined by opening and closing parens + colon. An object may be defined as any value, but CFS requires that all CFS data structures also begin as an object.
 
 ##### Object Example
 ```
@@ -65,5 +65,32 @@ An object is define by opening and closing parens + colon. An object may be defi
 		age =) 23
 		over18 =) !true
 	:)
+:)
+```
+
+### Array
+An array can be defined by opening and closing brackets + colon. An array can be defined as any value, however, it cannot be the start of a CFS data structure.
+
+Array values also must be separated by a new line.
+
+##### Array Example
+```
+(:
+	myArray =) [:
+		Brandon
+		Ralph
+		Tony
+		Keith
+	:]
+:)
+```
+
+### NULL
+In order to add a NULL value to your key, you must add the `@` character in front of the null.
+
+##### NULL Example
+```
+(:
+	myNull =) @null
 :)
 ```
