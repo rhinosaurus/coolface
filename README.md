@@ -5,7 +5,7 @@ CFS is a serialization format that uses human-readable text to transmit key=)val
 
 CFS is not bound to any particular language, however, in order for a language to use CFS must have both a parser and encoder for transmission.
 
-CFS files are distinguished by the `.cool` file extension.
+CFS files are distinguished by the `.cfs` file extension.
 
 Data Types and Syntax
 ---------------------
