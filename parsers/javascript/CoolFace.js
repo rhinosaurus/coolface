@@ -1,7 +1,8 @@
 /**
  *
  * CoolFace JS parser
- *
+ * @author Brandon Ryall
+ * @version 0.1
  **/
 
 (function(global) {
