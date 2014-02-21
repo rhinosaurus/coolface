@@ -9,20 +9,33 @@
 	"use strict";
 	var CoolFace = function() {
 		this.parse = function( cf ) {
-			var output = {};
-			cf = cf.replace( /(\(:)/, '');
-			cf = cf.replace( /(:\))/, '');
-			var result, exR,
-				r = new RegExp( "([^\t]+)", "g" ),
-				n = new RegExp( "(.*)(.=\\).)(.*)" );
+			var output = {},
+				result, 
+				r = new RegExp( "([^\n]+)(.*)(.=\\).)(.*)", "g" );
 			while( (result = r.exec(cf)) !== null ) {
-				exR = n.exec( result[0] );
-				if( exR !== null ) {
-					output[ exR[1] ] = exR[3];
-				}
+				output[ result[1] ] = this.typeCheck( result[4] );
 			}
 
 			return output;
+		};
+
+		this.typeCheck = function( v ) {
+			var out = v;
+			switch( v.charAt(0) ) {
+				case '#':
+					v = v.substr(1);
+					out = parseInt( v, 10 );
+					break;
+				case '!':
+					v = v.substr(1);
+					out = v == 'true';
+					break;
+				case '@':
+					v = v.substr(1);
+					out = null;
+					break;
+			}
+			return out;
 		};
 	};
 	var c = new CoolFace();
