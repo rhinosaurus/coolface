@@ -2,8 +2,32 @@
 	<head>
 		<title>CoolFace JS</title>
 		<script type="text/javascript" src="../../parsers/javascript/CoolFace.js"></script>
+		<script type="text/javascript">
+			var testCFS = "(:\nname =) Ralph\ncity =) Philadelphia\naddress =) (:\none =) 32 Strawberry St\ntwo =) Suite 2\n:)\nstate =) Pennsylvania\nzip =) 19106\nage =) #23\nover18 =) !true\nnullValue =) @null\nfriends =) [:\nBrandon\nReed\nMike\n:]\n:)";
+
+			console.log( CoolFace.parse( testCFS ) );
+
+			function tryCFS() {
+				var txt = document.getElementById("cfsTest").value;
+				
+				if( txt.length ) {
+					console.log( CoolFace.parse(txt) );
+				}
+			}
+		</script>
 	</head>
 	<body>
-		Hello, World!
+		<h1>CoolFace Serialization JavaScript Parser Test</h1>
+		Open web development tools to view the console output.<br><br>
+
+		The following is being run:<br>
+		<textarea rows="5" cols="150">
+var testCFS = "(:\nname =) Ralph\ncity =) Philadelphia\naddress =) (:\none =) 32 Strawberry St\ntwo =) Suite 2\n:)\nstate =) Pennsylvania\nzip =) 19106\nage =) #23\nover18 =) !true\nnullValue =) @null\nfriends =) [:\nBrandon\nReed\nMike\n:]\n:)";
+
+console.log( CoolFace.parse( testCFS ) );
+		</textarea><br><br>
+		Try it out yourself - create a CFS structure and hit the "Try" button:<br>
+		<textarea rows="10" cols="150" id="cfsTest"></textarea><br>
+		<button id="runCode" onclick="tryCFS();">Try!</button>
 	</body>
 </html>
